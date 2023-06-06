@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0.5rem 0.5rem;
+  border: 5px solid #333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 5px #fff;
+}
+
+.dark--mode {
+  background-color: #333;
+}
+
+.body {
+  background-color: snow;
+}
+
+.button.dark--mode {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0.5rem 0.5rem;
+  border: 5px solid #333;
+  border-radius: 5px;
+}
+
+.button--dark {
+  background-color: #333;
+  color: #fff;
+}
