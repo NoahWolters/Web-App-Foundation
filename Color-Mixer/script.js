@@ -1,33 +1,22 @@
-let colorInputRed = document.querySelector("#red");
-let colorInputGreen = document.querySelector("#green");
-let colorInputBlue = document.querySelector("#blue");
+document.addEventListener("slider", () => {
+  let colorInputRed = document.querySelector("#red");
+  let colorInputGreen = document.querySelector("#green");
+  let colorInputBlue = document.querySelector("#blue");
 
-let currentValueRed = colorInputRed.addEventListener(
-  "slider",
-  () => {
-    return document.getElementById("red").value;
-  },
-  false
-);
+  colorInputRed.addEventListener("input", mixColors);
+  colorInputGreen.addEventListener("input", mixColors);
+  colorInputBlue.addEventListener("input", mixColors);
+});
 
-let currentValueGreen = colorInputGreen.addEventListener(
-  "slider",
-  () => {
-    return document.getElementById("green").value;
-  },
-  false
-);
+function mixColors() {
+  let red = document.getElementById("red").value;
+  let green = document.getElementById("green").value;
+  let blue = document.getElementById("blue").value;
 
-let currentValueBlue = colorInputBlue.addEventListener(
-  "slider",
-  () => {
-    return document.getElementById("blue").value;
-  },
-  false
-);
+  changeColor(red, green, blue);
+}
 
 function changeColor(r, g, b) {
   document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
 }
-console.log("NOah");
-changeColor(currentValueRed, colorInputGreen, colorInputBlue);
+mixColors();
