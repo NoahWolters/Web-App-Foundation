@@ -10,10 +10,21 @@
 </head>
 
 <body>
-    <div>
+    <header>
         <h1>Todo App</h1>
-        <ul id="todolist"></ul>
+    </header>
+    <div>
 
+        <div id="div-filter">
+            <input type="radio" id="input-all" name="AllRadio" value="All">
+            <label for="label-all">All</label><br>
+            <input type="radio" id="input-open" name="OpenRadio" value="Open">
+            <label for="label-open">Open</label><br>
+            <input type="radio" id="input-done" name="DoneRadio" value="Done">
+            <label for="label-done">Done</label>
+        </div>
+    </div>
+    <div>
         <button id="removebtn">Remove done todos</button>
     </div>
 

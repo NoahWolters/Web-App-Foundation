@@ -1,6 +1,5 @@
 let addButton = document.querySelector("#todobtn");
 let removeButton = document.querySelector("#removebtn");
-let todoList = document.querySelector("#todolist");
 let addList = document.querySelector("#list");
 let todoInput = document.querySelector("#todoInput");
 state = {
